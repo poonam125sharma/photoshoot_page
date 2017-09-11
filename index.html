@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Metrophobic|Open+Sans:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            function main()
+            {
+                $("a.btn").hover(function(){
+                    $(this).fadeToggle();
+                });
+
+                $(".colicon").hover(function(){
+                    $(this).next().slideToggle();
+
+                    $(this).css("border-color","#F1C40F")
+                });
+
+                $("#bg1h1").hover(function(){
+                    $(this).animate({
+                        height:'200px',
+                        width:'800px',
+                        opacity:'0.5',
+                    },"fast").slideToggle();
+                });
+
+                $("#last-btn").click(function(){
+                    $(".bg-1").addClass("animated rollIn");
+                });
+            }
+
+            $(document).ready(main);
+
+        </script>
+
+        <script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll").style.display = "block";
+    } else {
+        document.getElementById("scroll").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+        </script>
+
+
+           </head>
+    <body>
+        <!--Navbaar-->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav">
+                        <li><h3><i class="fa fa-bars" aria-hidden="true"></i></h3></li>
+                        <li><h3>PHOTOBOOK</h3></li>
+                    </ul>
+                </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><h5 class="number">+112358132134</h5></li>
+                        <li><h3><i class="fa fa-sign-in" aria-hidden="true"></i></h3></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <!--First Container-->
+        <div class="container-fluid text-center bg-1">
+            <h1 id="bg1h1">CREATE YOUR OWN PHOTOSTORY</h1>
+            <p>Make your photobook online</p>
+            <a href="#" class="btn">MAKE YOUR PHOTOBOOK</a>
+        </div>
+
+        <!-- Second Container-->
+        <div class="text-center bg-2">
+            <div class="cols">
+                <div class="container">
+                    <div class="col2">
+
+                            <img src="download.png" alt="cloud-download" class="colicon" >
+                            <h4>Download photos</h4>
+
+                    </div>
+                    <div class="col2">
+
+                            <img src="design.png" alt="desktop-design" class="colicon">
+                            <h4>Design your photobook</h4>
+
+                    </div>
+                    <div class="col2">
+
+                            <img src="dollar-symbol.png" alt="pay" class="colicon">
+                            <h4>Pay for service</h4>
+
+                    </div>
+                    <div class="col2">
+
+                            <img src="cart.png" alt="get your photobook" class="colicon" >
+                            <h4>Get your photobook</h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Third Container-->
+        <div class="bg-3 text-center">
+            <h2>ADVANTAGE</h2>
+            <div class="cols">
+                <div class="container">
+                    <div class="col1">
+                        <img src="social media.png" alt="social media icons" class="img-responsive">
+                        <h4> Import photos from your social networks</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidedunt modi tempora </p>
+                    </div>
+
+                    <div class="col1">
+                        <img src="beforeafter.png" alt="image editing" class="img-responsive">
+                        <h4> Photo editing</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidedunt ut labore et dolore magna aliqua. Ora incidunt ut labore </p>
+                    </div>
+
+                    <div class="col1">
+                        <img src="template.png" alt="templates" class="img-responsive">
+                        <h4>Templates</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing ut enim ad minim , nostrud exercitation ullamco laboris nisi ut aliquip ex commodo</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">MAKE YOUR PHOTOBOOK</a>
+        </div>
+
+        <!--Fourth Container-->
+        <div class="text-center bg-4">
+            <h1>READY SOLUTIONS</h1>
+            <div class="cols">
+                <div class="container">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3>LIGHTBOOK</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>15<span>x</span>10 cm</li>
+                                    <li>12 pages</li>
+                                    <li>binding on the clip</li>
+                                </ul>
+                                <div class="price">
+                                    <p>$129</p>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <h4> Make your LIGHTBOOK</h4>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+
+                                <h3>CLASSIC BOOK</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>30<span>x</span>21 cm</li>
+                                    <li>36 pages</li>
+                                    <li>binding on the spring</li>
+                                    <li>fabric cover</li>
+                                </ul>
+                                <div class="price">
+                                    <p>$239</p>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <h4> Make your CLASSICBOOK</h4>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3>PREMIUM BOOK</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>42<span>x</span>50 cm</li>
+                                    <li>50 pages</li>
+                                    <li>hardcover</li>
+                                    <li>leather cover</li>
+                                    <li>free shipping</li>
+                                </ul>
+                                <div class="price">
+                                    <p>$759</p>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <h4> Make your PREMIUMBOOK</h4>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Fifth container-->
+        <div class="bg-5">
+            <div class="content-holder">
+                <!--<div class="container">-->
+                    <h1>TESTIMONIALS</h1>
+
+                    <div class="pic-div">
+                        <div class="pic">
+                            <img src="ryan_chenkie.jpg" alt="ryan_chenkie" class="img-responsive">
+                        </div>
+                        <div class="pic-content">
+                            <h3>JOHN DOE</h3>
+                            <p>Wedding Photographer</p>
+                        </div>
+                    </div>
+
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie urna egestas pretium cursus. Ut eu varius felis, sed interdum dolor. Cras porta malesuada mi, at dapibus orci tempus laoreet. Donec in augue eget sem iaculis </p>
+                        <p>Duis urna est, lobortis sed odio et, consectetur hendrerit eros. Vestibulum venenatis ipsum nisl, eget sagittis ex eleifend vel. Vivamus ut ex metus. Phasellus eu justo nulla. Nullam at justo sit amet. </p>
+                        <p id="next-with-arrow">Next testimonial<i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                        <a href="#" class="btn">MAKE YOUR PHOTOBOOK</a>
+                    </div>
+
+
+                </div>
+            <!--</div>-->
+            <div class="image-holder">
+                    <img src="bg-5.2(1).png" alt="Bulb image" height="100%" class="img-responsive">
+            </div>
+        </div>
+
+        <!--Sixth Container-->
+        <div class="text-center bg-6">
+            <div class="cols">
+                <div class="container">
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3>TERMS</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Duis urna est, lobortis sed odio et, consectetur hendrerit eros. Vestibulum venenatis ipsum nisl,.</p>
+                            <p>Nullam at justo sit amet nisi tincidunt sollicitudin. Sed convallis pretium risus a pretium. Donec a lectus consequat.</p>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3>PAYMENT</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p style="text-align: left;">Payment methods:</p>
+                            <ul>
+                                <li>VISA</li>
+                                <li>Master Card</li>
+                                <li>PayPal</li>
+                                <li>American Express</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3>SHIPPING</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Duis urna est, lobortis sed odio et, consectetur hendrerit eros. Vestibulum venenatis ipsum nisl, eget sagittis ex eleifend vel. Vivamus ut ex metus.</p>
+                           <p id="free-shipping">Free shipping for Premium Book</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="last-btn">MAKE YOUR PHOTOBOOK</a>
+        </div>
+
+        <!--Footer-->
+        <footer class="container-fluid bg-7">
+            <div class="container">
+                 <div class="row">
+                     <div class="col-xs-2">
+                         <ul>
+                            <li><hr></li>
+                             <li><a href="#">About Us</a></li>
+                             <li><a href="#">Career</a></li>
+                             <li><a href="#">Help</a></li>
+                             <li><a href="#">Press</a></li>
+                         </ul>
+                     </div>
+
+                    <div class="col-xs-2">
+                         <ul>
+                            <li><hr></li>
+                             <li><a href="#">Terms</a></li>
+                             <li><a href="#">Payment</a></li>
+                             <li><a href="#">Shipping</a></li>
+                             <li><a href="#">Contact</a></li>
+                         </ul>
+                     </div>
+
+                     <div class="col-xs-2">
+                         <ul>
+                            <li><hr></li>
+                             <li><a href="#">LIGHTBOOK</a></li>
+                             <li><a href="#">CLASSICBOOK</a></li>
+                             <li><a href="#">PREMIUMBOOK</a></li>
+                         </ul>
+                     </div>
+
+                     <div class="col-md-3 offset-md-3 pull-right">
+                         <!--<div class="row">
+                             <div class="col-xs-4">
+                             </div>
+                             <div class="col-xs-4">
+                             </div>
+                             <div class="col-xs-4">
+                             </div>
+                         </div>-->
+                         <ul class="icon-list">
+                         <li><hr></li>
+                         <li><a href="#!"><img src="facebook-logo.png"></a></li>
+                         <li><a href="#!"><img src="instagram-symbol.png"></a></li>
+                         <li><a href="#!"><img src="twitter-logo.png"></a></li>
+                         </ul>
+
+                         
+                     </div>
+                </div>
+            </div>
+            <p style="padding-bottom: 50px"> &copy; 2015 PHOTOBOOK. All Rights Reserved</p>
+            <button onclick="topFunction()" id="scroll"> Go to Top</button>
+        </footer>
+
+    </body>
+</html>
